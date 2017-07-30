@@ -7,37 +7,236 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript">
+
+        </script>
     </head>
     <body>
+<div class="" id="formOne">
+  <form method="POST" action="YFHReg.php">
+      <h1>Sign Up</h1>
+      <label for="NAME">Name</label>
+      <input type="text" name="NAME" id="name" placeholder="Name">
 
-      <form method="POST" action="YFHReg.php">
-          <h1>Sign Up</h1>
-          <input type="text" name="NAME" id="name" placeholder="Name">
-          <input type="text" name="NUMBER" id="number" placeholder="Number">
-          <input type="date" name="DOC" id="DOC" placeholder="Day Of Calling">
-          <input type="time" name="TOCF" id="name" placeholder="Time of calling from">
-          <input type="time" name="TOCT" id="name" placeholder="Time of calling to">
-          <input type="text" name="DOR" id="name" placeholder="DOR">
-          <input type="email" name="EMAILID" id="name" placeholder="Email ID">
-          <input type="text" name="MOTHERTONGUE" id="name" placeholder="Mother Tounge">
-          <input type="date" name="DOB" id="name" placeholder="DOB">
-          <input type="text" name="COUNTRY" id="name" placeholder="Country">
-          <input type="text" name="STATE" id="name" placeholder="State">
-          <input type="text" name="CITY" id="name" placeholder="City">
-          <input type="text" name="PINCODE" id="name" placeholder="Area ID">
-          <input type="text" name="ADDRESS" id="name" placeholder="Address">
-          <input type="text" name="STUJOB" id="name" placeholder="Working Or Studying">
-          <input type="text" name="QUALIFICATION" id="name" placeholder="Qualification">
-          <input type="text" name="MARITALSTATUS" id="name" placeholder="Marital Status">
-          <input type="text" name="GENDER" id="name" placeholder="Gender">
-          <input type="text" name="COLCOM" id="name" placeholder="College/Company">
-          <input type="date" name="PROGDATE" id="name" placeholder="Program date">
-          <input type="text" name="PASSNO" id="name" placeholder="Pass No.">
-          <input type="text" name="AMTPAID" id="name" placeholder="Amount Paid">
-          <input type="text" name="AMTBAL" id="name" placeholder="Amount Balance">
-          <input type="text" name="SOURCE" id="name" placeholder="Source">
-          <input type="submit" placeholder="Register">
-      </form>
-      
+      <label for="NUMBER">Mobile Number</label>
+      <input type="number" name="NUMBER" id="number" placeholder="Number">
+
+      <label for="EMAILID">Email Id</label>
+      <input type="email" name="EMAILID" id="emailid" placeholder="Email ID">
+
+      <label for="MOTHERTONGUE">Mother Tongue</label>
+      <select name="MOTHERTONGUE" id="mt" type="text">
+        <option value="">Select Language</option>
+        <option value="Assamese">Assamese</option>
+        <option value="Assamese">Assamese</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Bodo">Bodo</option>
+        <option value="Dogri">Dogri</option>
+        <option value="English">English</option>
+        <option value="Gujarati">Gujarati</option>
+        <option value="Kannada">Kannada</option>
+        <option value="Kashmiri">Kashmiri</option>
+        <option value="Konkani">Konkani</option>
+        <option value="Maithili">Maithili</option>
+        <option value="Malayalam">Malayalam</option>
+        <option value="Marathi">Marathi</option>
+        <option value="Manipuri">Manipuri</option>
+        <option value="Nepali">Nepali</option>
+        <option value="Odia">Odia</option>
+        <option value="Punjabi">Punjabi</option>
+        <option value="Sanskrit">Sanskrit</option>
+        <option value="Santali">Santali</option>
+        <option value="Sindhi">Sindhi</option>
+        <option value="Tamil">Tamil</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="DOB">Date Of Birth</label>
+      <input type="date" name="DOB" id="dob" placeholder="DOB">
+
+      <label for="COUNTRY">COUNTRY</label>
+      <input type="text" name="COUNTRY" id="country" placeholder="Country">
+
+      <label for="STATE">STATE</label>
+      <input type="text" name="STATE" id="state" placeholder="State">
+
+      <label for="CITY">CITY</label>
+      <input type="text" name="CITY" id="city" placeholder="City" value="">
+
+      <label for="PINCODE">Pincode</label>
+      <input type="text" name="PINCODE" id="areaid" placeholder="Area ID">
+
+      <label for="ADDRESS">Address</label>
+      <input type="text" name="ADDRESS" id="address" placeholder="Address">
+
+      <label for="STUJOB">Working Or Studying</label>
+      <select name="STUJOB" id="wors" type="text">
+        <option value="">Select</option>
+        <option value="Assamese">working</option>
+        <option value="Assamese">Studying</option>
+      </select>
+
+      <label for="QUALIFICATION">Qualification</label>
+      <input type="text" name="QUALIFICATION" id="qualification" placeholder="Qualification">
+
+      <label for="MARITALSTATUS">Marital Status</label>
+      <select name="MARITALSTATUS" id="maritalS" type="text">
+        <option value="">Select</option>
+        <option value="Assamese">Married</option>
+        <option value="Assamese">Unmarried</option>
+      </select>
+
+      <label for="GENDER">Gender</label>
+      <select name="GENDER" id="gender" type="text">
+        <option value="">Select</option>
+        <option value="Assamese">Male</option>
+        <option value="Assamese">Female</option>
+      </select>
+
+      <label for="COLCOM">Collage Or Company</label>
+      <input type="text" name="COLCOM" id="corC" placeholder="College/Company">
+
+      <label for="PROGDATE">Program Date</label>
+      <input type="date" name="PROGDATE" id="pdate" placeholder="Program date">
+  </form>
+  <button type="button" name="button" onclick="dooo()">Next</button>
+
+</div>
+
+
+
+<div class="" id="formTwo">
+
+
+
+  <form method="POST" action="YFHReg.php" style="margin-bottom="20px;"">
+      <h1>Varify Details</h1>
+      <label for="GENDER">Gender</label>
+      <select name="GENDER" id="gender" type="text">
+        <option value="">Select</option>
+        <option value="Assamese">Male</option>
+        <option value="Assamese">Female</option>
+      </select>
+
+      <label for="NAME">Age</label>
+      <input type="number" name="age" id="age" placeholder="Age">
+
+      <label for="NAME">Local or OS</label>
+      <input type="text" name="lorOS" id="lorOS" placeholder="">
+  </form>
+
+
+
+
+
+  <form method="POST">
+      <h1>Sign Up</h1>
+      <div class="" style="background-color="#040404"; margin="10px;"">
+      </div>
+      <label for="NAME">Date of Registration</label>
+      <input type="text" name="NAME" id="name" placeholder="Name">
+
+      <label for="NUMBER">Date of Program</label>
+      <input type="number" name="NUMBER" id="number" placeholder="Number">
+
+      <label for="EMAILID">Registerd By</label>
+      <input type="email" name="EMAILID" id="emailid" placeholder="Email ID">
+
+      <label for="EMAILID">Source</label>
+      <input type="email" name="EMAILID" id="emailid" placeholder="Email ID">
+
+      <label for="EMAILID">Paid Amount</label>
+      <input type="email" name="EMAILID" id="emailid" placeholder="Email ID">
+
+      <label for="EMAILID">Balance Amount</label>
+      <input type="email" name="EMAILID" id="emailid" placeholder="Email ID">
+
+      <label for="EMAILID">Pass Number</label>
+      <input type="email" name="EMAILID" id="emailid" placeholder="Email ID">
+
+      <label for="MOTHERTONGUE">Mother Tongue</label>
+      <select name="MOTHERTONGUE" id="mt" type="text">
+        <option value="">Select Language</option>
+        <option value="Assamese">Assamese</option>
+        <option value="Assamese">Assamese</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Bodo">Bodo</option>
+        <option value="Dogri">Dogri</option>
+        <option value="English">English</option>
+        <option value="Gujarati">Gujarati</option>
+        <option value="Kannada">Kannada</option>
+        <option value="Kashmiri">Kashmiri</option>
+        <option value="Konkani">Konkani</option>
+        <option value="Maithili">Maithili</option>
+        <option value="Malayalam">Malayalam</option>
+        <option value="Marathi">Marathi</option>
+        <option value="Manipuri">Manipuri</option>
+        <option value="Nepali">Nepali</option>
+        <option value="Odia">Odia</option>
+        <option value="Punjabi">Punjabi</option>
+        <option value="Sanskrit">Sanskrit</option>
+        <option value="Santali">Santali</option>
+        <option value="Sindhi">Sindhi</option>
+        <option value="Tamil">Tamil</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="DOB">Date Of Birth</label>
+      <input type="date" name="DOB" id="dob" placeholder="DOB">
+
+      <label for="COUNTRY">COUNTRY</label>
+      <input type="text" name="COUNTRY" id="country" placeholder="Country">
+
+      <label for="STATE">STATE</label>
+      <input type="text" name="STATE" id="state" placeholder="State">
+
+      <label for="CITY">CITY</label>
+      <input type="text" name="CITY" id="city" placeholder="City" value="">
+
+      <label for="PINCODE">Pincode</label>
+      <input type="text" name="PINCODE" id="areaid" placeholder="Area ID">
+
+      <label for="ADDRESS">Address</label>
+      <input type="text" name="ADDRESS" id="address" placeholder="Address">
+
+      <label for="STUJOB">Working Or Studying</label>
+      <select name="STUJOB" id="wors" type="text">
+        <option value="">Select</option>
+        <option value="Assamese">working</option>
+        <option value="Assamese">Studying</option>
+      </select>
+
+      <label for="QUALIFICATION">Qualification</label>
+      <input type="text" name="QUALIFICATION" id="qualification" placeholder="Qualification">
+
+      <label for="MARITALSTATUS">Marital Status</label>
+      <select name="MARITALSTATUS" id="maritalS" type="text">
+        <option value="">Select</option>
+        <option value="Assamese">Married</option>
+        <option value="Assamese">Unmarried</option>
+      </select>
+
+      <label for="GENDER">Gender</label>
+      <select name="GENDER" id="gender" type="text">
+        <option value="">Select</option>
+        <option value="Assamese">Male</option>
+        <option value="Assamese">Female</option>
+      </select>
+
+      <label for="COLCOM">Collage Or Company</label>
+      <input type="text" name="COLCOM" id="corC" placeholder="College/Company">
+
+      <label for="PROGDATE">Program Date</label>
+      <input type="date" name="PROGDATE" id="pdate" placeholder="Program date">
+  </form>
+  <button type="button" name="button" onclick="dooo()">Nexttt</button>
+
+</div>
+
     </body>
+<script src="index.js"></script>
 </html>
