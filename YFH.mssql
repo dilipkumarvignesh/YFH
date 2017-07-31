@@ -1,0 +1,71 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jul 31, 2017 at 03:57 PM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 5.6.31
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `YFH`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `UserRegistrations`
+--
+
+CREATE TABLE `UserRegistrations` (
+  `Name` varchar(50) NOT NULL,
+  `Number` varchar(20) NOT NULL,
+  `DOC` date NOT NULL,
+  `TOCF` time NOT NULL,
+  `TOCT` time NOT NULL,
+  `DOR` varchar(30) NOT NULL,
+  `EMAILID` varchar(50) NOT NULL,
+  `MOTHERTONGUE` varchar(20) NOT NULL,
+  `DOB` date NOT NULL,
+  `COUNTRY` varchar(20) NOT NULL,
+  `STATE` varchar(20) NOT NULL,
+  `CITY` varchar(20) NOT NULL,
+  `PINCODE` varchar(20) NOT NULL,
+  `ADDRESS` text NOT NULL,
+  `STUJOB` tinyint(1) NOT NULL,
+  `QUALIFICATION` varchar(30) NOT NULL,
+  `MARITALSTATUS` tinyint(1) NOT NULL,
+  `GENDER` varchar(10) NOT NULL,
+  `COLCOM` varchar(40) NOT NULL,
+  `PROGDATE` date NOT NULL,
+  `PASSNO` varchar(20) NOT NULL,
+  `AMTPAID` int(10) NOT NULL,
+  `AMTBAL` int(10) NOT NULL,
+  `SOURCE` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `UserRegistrations`
+--
+
+INSERT INTO `UserRegistrations` (`Name`, `Number`, `DOC`, `TOCF`, `TOCT`, `DOR`, `EMAILID`, `MOTHERTONGUE`, `DOB`, `COUNTRY`, `STATE`, `CITY`, `PINCODE`, `ADDRESS`, `STUJOB`, `QUALIFICATION`, `MARITALSTATUS`, `GENDER`, `COLCOM`, `PROGDATE`, `PASSNO`, `AMTPAID`, `AMTBAL`, `SOURCE`) VALUES
+('DIlip', 'V', '0000-00-00', '00:00:00', '00:00:00', '', 'dilipkumarvignesh@gmail.com', '', '0000-00-00', 'India', 'TN', 'Chennai', '600048', 'no 3/35,mudichur main road,mudichur,chennai, Room no 235,Zircon C, NITT,Trichy', 0, '', 0, '', '', '1955-12-06', '12345', 200, 50, 'Friend'),
+('Dilip Kumar Vignesh', '9663898009', '2017-12-08', '02:30:00', '21:00:00', '25', 'dinasharan@gmail.com', 'Tamil', '1992-12-06', 'India', 'Tamilnadu', 'Chennai', '600048', 'no 3/35,mudichur main road,mudichur,chennai, Room no 235,Zircon C, NITT,Trichy', 0, 'BTECH', 0, 'Male', 'SAP Labs', '1992-12-06', '123456', 200, 50, 'Friend'),
+('Sumedha', '9663898009', '2017-07-25', '18:00:00', '18:45:00', '25', 'dilipkumarvignesh@gmail.com', 'Tamil', '2017-07-26', 'India', 'Tamil Nadu ', 'Chennai', '600048', 'Hare Krishna Hill, Chord Road, Rajajinagar', 0, 'BTECH', 0, 'Male', 'SAP Labs', '2017-07-27', '5679', 200, 50, 'Friend '),
+('Test1', '9342336283', '2017-07-23', '18:14:00', '19:14:00', '25', 'dilipkumarvignesh@gmail.com', 'Kannada', '2017-07-21', 'India', 'Tamil Nadu', 'Chennai', '560010', 'Hare Krishna Hill, Chord Road, Rajajinagar, Bengaluru, Karna', 0, 'Bed', 0, 'Male', 'Iskcon', '2017-07-27', '', 100, 150, 'Temple ');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
