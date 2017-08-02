@@ -10,16 +10,11 @@
         <script type="text/javascript">
 
         </script>
-
-        <head>
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-</head>
     </head>
     <body>
-<div class="animated shake" id="formOne">
-  <form method="POST" action="YFHReg.php">
-      <h1>Sign Up</h1>
+<div id="formOne">
+  <form>
+      <h1>Folk Bangalore</h1>
       <label for="NAME">Name</label>
       <input type="text" name="NAME" id="name" placeholder="Name">
 
@@ -58,6 +53,16 @@
         <option value="Other">Other</option>
       </select>
 
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" placeholder="Age" value="">
+
+      <label for="lorOS">Local Or OutStation</label>
+      <select name="lorOS" id="lorOS" type="text">
+        <option value="">Select</option>
+        <option value="Local">Local</option>
+        <option value="Out Station">Out Station</option>
+      </select>
+
       <label for="DOB">Date Of Birth</label>
       <input type="date" name="DOB" id="dob" placeholder="DOB">
 
@@ -79,8 +84,8 @@
       <label for="STUJOB">Working Or Studying</label>
       <select name="STUJOB" id="wors" type="text">
         <option value="">Select</option>
-        <option value="Assamese">working</option>
-        <option value="Assamese">Studying</option>
+        <option value="Working">working</option>
+        <option value="Studying">Studying</option>
       </select>
 
       <label for="QUALIFICATION">Qualification</label>
@@ -89,15 +94,15 @@
       <label for="MARITALSTATUS">Marital Status</label>
       <select name="MARITALSTATUS" id="maritalS" type="text">
         <option value="">Select</option>
-        <option value="Assamese">Married</option>
-        <option value="Assamese">Unmarried</option>
+        <option value="Married">Married</option>
+        <option value="Unmarried">Unmarried</option>
       </select>
 
       <label for="GENDER">Gender</label>
       <select name="GENDER" id="gender" type="text">
         <option value="">Select</option>
-        <option value="Assamese">Male</option>
-        <option value="Assamese">Female</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
       </select>
 
       <label for="COLCOM">Collage Or Company</label>
@@ -117,17 +122,21 @@
   <form method="POST" action="YFHReg.php" style="margin-bottom="20px;"">
       <h1>Varify Details</h1>
       <label for="GENDER">Gender</label>
-      <select name="GENDER" id="gender" type="text">
+      <select name="GENDER" id="genderf2" type="text">
         <option value="">Select</option>
-        <option value="Assamese">Male</option>
-        <option value="Assamese">Female</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
       </select>
 
       <label for="NAME">Age</label>
-      <input type="number" name="age" id="age" placeholder="Age">
+      <input type="number" name="age2" id="age2" placeholder="Age">
 
-      <label for="NAME">Local or OS</label>
-      <input type="text" name="lorOS" id="lorOS" placeholder="">
+      <label for="lorOS2">Local Or OutStation</label>
+      <select name="lorOS2" id="lorOS2" type="text">
+        <option value="">Select</option>
+        <option value="Local">Local</option>
+        <option value="OutStation">Out Station</option>
+      </select>
   </form>
 
 
@@ -139,28 +148,28 @@
       <div class="" style="background-color="#040404"; margin="10px;"">
       </div>
       <label for="NAME">Date of Registration</label>
-      <input type="date" name="NAME" id="name" placeholder="Date Of Registration">
+      <input type="date" name="dofR" id="dofR" placeholder="Date Of Registration">
 
       <label for="dop">Date of Program</label>
-      <input type="date" name="dop" id="number" placeholder="Date Of Program">
+      <input type="date" name="dofP" id="dofP" placeholder="Date Of Program">
 
       <label for="rb">Registerd By</label>
-      <input type="text" name="rb" id="emailid" placeholder="Registerd By">
+      <input type="text" name="rb" id="rb" placeholder="Registerd By">
 
       <label for="source">Source</label>
-      <input type="text" name="source" id="emailid" placeholder="Source">
+      <input type="text" name="source" id="Source" placeholder="Source">
 
       <label for="pamt">Paid Amount</label>
-      <input type="number" name="pamt" id="emailid" placeholder="Paid Amount">
+      <input type="number" name="pamt" id="amountPaid" placeholder="Paid Amount">
 
       <label for="bamt">Balance Amount</label>
-      <input type="number" name="bamt" id="emailid" placeholder="Balance Amount">
+      <input type="number" name="bamt" id="amountBalance" placeholder="Balance Amount">
 
       <label for="pno">Pass Number</label>
-      <input type="number" name="pno" id="emailid" placeholder="Pass Number">
+      <input type="number" name="pno" id="passNo" placeholder="Pass Number">
 
   </form>
-  <button type="button" name="button" onclick="dooo()">Nexttt</button>
+  <button type="button" name="button" onclick="btnPageTwo()">Nexttt</button>
 
 </div>
 
